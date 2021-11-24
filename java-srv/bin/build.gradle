@@ -1,0 +1,15 @@
+apply plugin: 'scala'
+apply plugin: 'application'
+
+targetCompatibility = sourceCompatibility = "1.8"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.scala-lang:scala-library:2.12.10'
+    implementation 'org.mongodb:mongo-java-driver:3.12.7'
+}
+
+mainClassName = 'example.App'
